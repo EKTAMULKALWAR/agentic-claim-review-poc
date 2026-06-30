@@ -119,7 +119,7 @@ code/
   data/
     cms_sample_50k.csv ← cached CMS sample (auto-downloaded if missing, gitignored)
   chroma_db/           ← persisted vector index (auto-built on first run, gitignored)
-pdf/
+report/
   Cotiviti_Agentic_AI_Report.pdf ← written report
 ppt/
   Cotiviti_Presentation.pptx     ← presentation slides
