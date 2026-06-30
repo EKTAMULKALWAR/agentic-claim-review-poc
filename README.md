@@ -66,7 +66,7 @@ source .venv/bin/activate      # macOS / Linux
 ### 3. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r code/requirements.txt
 ```
 
 ### 4. Install Ollama and pull a model
@@ -88,7 +88,7 @@ ollama serve
 ### 5. Run the app
 
 ```bash
-streamlit run app.py
+streamlit run code/app.py
 ```
 
 Open [http://localhost:8501](http://localhost:8501) in your browser.
@@ -108,16 +108,21 @@ Key columns used: `Rndrng_NPI`, `Rndrng_Prvdr_Type`, `HCPCS_Cd`, `Tot_Srvcs`, `T
 ## Project structure
 
 ```
-app.py               ← Streamlit UI (entry point)
-agents.py            ← Stats Agent, Policy Agent, Orchestrator
-pipeline.py          ← Isolation Forest + peer z-scores, query builder
-vector_store.py      ← ChromaDB + sentence-transformers policy index
-load_cms_data.py     ← CMS data fetching and caching
-policies.py          ← 15-policy knowledge base (2026 CMS guidelines)
-requirements.txt     ← Python dependencies
-data/
-  cms_sample_50k.csv ← cached CMS sample (auto-downloaded if missing)
-chroma_db/           ← persisted vector index (auto-built on first run, gitignored)
+code/
+  app.py               ← Streamlit UI (entry point)
+  agents.py            ← Stats Agent, Policy Agent, Orchestrator
+  pipeline.py          ← Isolation Forest + peer z-scores, query builder
+  vector_store.py      ← ChromaDB + sentence-transformers policy index
+  load_cms_data.py     ← CMS data fetching and caching
+  policies.py          ← 15-policy knowledge base (2026 CMS guidelines)
+  requirements.txt     ← Python dependencies
+  data/
+    cms_sample_50k.csv ← cached CMS sample (auto-downloaded if missing, gitignored)
+  chroma_db/           ← persisted vector index (auto-built on first run, gitignored)
+pdf/
+  Cotiviti_Agentic_AI_Report.pdf ← written report
+ppt/
+  Cotiviti_Presentation.pptx     ← presentation slides
 ```
 
 ---

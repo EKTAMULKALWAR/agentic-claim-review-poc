@@ -1,6 +1,6 @@
 .venv/
 __pycache__/
 .env
-data/cms_sample_50k.csv
-chroma_db/
+code/data/cms_sample_50k.csv
+code/chroma_db/
 .claude/
