@@ -123,6 +123,8 @@ report/
   Cotiviti_Agentic_AI_Report.pdf ← written report
 ppt/
   Cotiviti_Presentation.pptx     ← presentation slides
+video/
+  Video.mp4                      ← recorded demo walkthrough
 ```
 
 ---
